@@ -1,0 +1,33 @@
+Q 17.
+
+   A
+  A B A
+A B C B A
+
+Solution:-
+
+#include<iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+ for(int i=1;i<=n;i++){
+     for(int j=n-i;j>0;j--){
+    cout<<"  ";
+    }
+
+     for(int j=1;j<i;j++){
+        char ch = 'A'+j-1;
+        cout<<ch<<" ";
+    }
+
+   for(int j=i-1;j>=0;j--){
+    char ch = 'A'+j;
+    cout<<ch<<"  ";
+   }
+
+ for(int j=n-i;j>0;j--){
+        cout<<"  ";
+    }
+    cout<<endl;}
+return 0;}
